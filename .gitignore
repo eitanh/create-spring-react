@@ -1,3 +1,5 @@
 *.iml
 .idea
 target
+ui/node_modules
+ui/target
