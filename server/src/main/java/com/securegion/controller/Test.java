@@ -24,10 +24,10 @@ public class Test {
     @ResponseBody
     List<Device> devices() {
         return Arrays.asList(
-                Device.builder().name("Device 1").build(),
-                Device.builder().name("Device 2").build(),
-                Device.builder().name("Device 3").build(),
-                Device.builder().name("Device 4").build()
+                Device.builder().name("Device 1").description("Description1").build(),
+                Device.builder().name("Device 2").description("Description2").build(),
+                Device.builder().name("Device 3").description("Description3").build(),
+                Device.builder().name("Device 4").description("Description4").build()
         );
     }
 }

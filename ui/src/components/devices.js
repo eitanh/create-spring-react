@@ -31,7 +31,7 @@ export default class Devices extends React.Component {
 
             <TableRow key={index}>
                 <TableRowColumn >{device.name}</TableRowColumn>
-                <TableRowColumn>{device.name}</TableRowColumn>
+                <TableRowColumn>{device.description}</TableRowColumn>
             </TableRow>
             ))
         );
