@@ -1,5 +1,1 @@
-/**
- * Created by master on 02/06/2017.
- */
-
-export const BACKEND_URL = 'http://localhost:8080'
+export const BACKEND_URL = window.location.port === '3000' ? window.location.protocol +'//'+window.location.hostname +':8080' : window.location.origin;
