@@ -27,17 +27,14 @@ class App extends Component {
         <MuiThemeProvider>
             <Router>
 
-        <div className="App">
-
-            <Route exact path="/" component={Test} />
-            <Route path="/devices" component={DevicesList}/>
-
-
-
+                <div className="App">
+                    <AppHeader/>
+                    <LeftMenu/>
+                    <Route exact path="/" component={Test} />
+                    <Route path="/devices" component={DevicesList}/>
 
 
-
-      </div>
+              </div>
             </Router>
         </MuiThemeProvider>
     );

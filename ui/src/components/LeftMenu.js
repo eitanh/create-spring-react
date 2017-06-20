@@ -12,6 +12,11 @@ import PeopleIcon from 'material-ui/svg-icons/social/people'
 import PermContactIcon from 'material-ui/svg-icons/action/perm-contact-calendar'
 
 import { sidebarIconsColor } from '../style/materialStyles'
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom'
 
 const home = <HomeIcon color={sidebarIconsColor}/>
 const rss = <RssIcon color={sidebarIconsColor}/>
@@ -35,11 +40,10 @@ class LeftMenu extends Component{
                 containerStyle={{height: 'calc(100%)',width:70, top: 0,background:'#000000'}}
                 docked={true}
                 width={200}
-
+                containerElement={<Link to={'/devices'}/>}
                 onRequestChange={(open) => this.setState({open})
                 }
             >
-                <img src={spiderbot} className="menulogo" alt="logo" />
                 <MenuItem onTouchTap={this.handleClose}>M1</MenuItem>
                 <MenuItem onTouchTap={this.handleClose}>M2</MenuItem>
             </Drawer>

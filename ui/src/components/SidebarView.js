@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Drawer, IconButton, Divider} from 'material-ui'
+import {Link} from 'react-router-dom'
 import {iconStyle, iconButtonStyle, sidebarWidth, sidebarStyle} from '../style/materialStyles'
 
 export default class SidebarView extends Component {
@@ -9,7 +10,10 @@ export default class SidebarView extends Component {
                 tooltip={item.title}
                 tooltipPosition="top-right"
                 style={iconButtonStyle}
-                iconStyle={iconStyle}>
+                container
+                iconStyle={iconStyle}
+                containerElement={<Link to={item.path} />}
+            >
                 {item.icon}
             </IconButton>
         )
